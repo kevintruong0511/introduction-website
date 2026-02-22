@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="website.css">
+    <title>Khang's website</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><a href="index.html">Khang's Website</a></div>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="past.html">Past</a></li>
+            <li><a href="future.html">Future</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </nav>
+
+    <div class="structure">
+        <h1 class="label">TECHNICAL SECTION</h1>
+        <h2 class="title-past">I. Structure of my website</h2>
+        <p>My website has 4 webpages and 1 cascading stylesheet. The table below provides an overall outline of
+            structure of
+            my website.</p>
+        <table class="content-table">
+            <thead>
+                <th>Filename</th>
+                <th>Title</th>
+                <th>Extension</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>index.html</td>
+                    <td>main</td>
+                    <td>.html</td>
+                    <td>The homepage of my websites</td>
+                </tr>
+                <tr class="even">
+                    <td>index.html</td>
+                    <td>main</td>
+                    <td>.html</td>
+                    <td>The homepage of my websites</td>
+                </tr>
+                <tr>
+                    <td>past.html</td>
+                    <td>past</td>
+                    <td>.html</td>
+                    <td>Description of my past education</td>
+                </tr>
+                <tr class="even">
+                    <td>future.html</td>
+                    <td>future</td>
+                    <td>.html</td>
+                    <td>Description of my future plan and careers</td>
+                </tr>
+                <tr>
+                    <td>comments.html</td>
+                    <td>comment</td>
+                    <td>.html</td>
+                    <td>This page contains some comments & description to explain how I worked on this website.</td>
+                </tr>
+                <tr class="even" id="last-row">
+                    <td>websystems.css</td>
+                    <td>N/A</td>
+                    <td>.html</td>
+                    <td>This page contains some comments & description to explain how I worked on this website.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="title-past">II. Structure of each webpages</h2>
+        <p>The second part is about structure of HTML and CSS files. In terms of HTML, all the webpages are basically in
+            the
+            similar structure, so Home Page is used to provide explanation of its breakdown structure. When it comes to
+            CSS
+            file, the description/explanation of selectors is provided below.</p>
+
+        <div class="double-image-container">
+            <img src="images/homepage.png" class="double-image-member" alt="Main page">
+            <img src="images/hobbies.png" class="double-image-member" alt="Hobbies grid layout">
+        </div>
+
+
+        <h3 class="sub-label">HTML Structure</h3>
+        <ol class="comment-list">
+            <li>&lt;!DOCTYPE html&gt;: This declaration defines the document type and version of HTML being used.
+            </li>
+            <li>&lt;head&gt;: The &lt;head&gt; element contains a link to an external CSS file and also a title for my
+                website</li>
+            <li>&lt;body&gt;: The &lt;body&gt; element contains the actual content of the webpage, including a
+                navigation bar, headings, paragraphs, images, links, and other elements. In this document, the content
+                is divided into three main sections: header, main, and footer.</li>
+            <li>&lt;nav&gt;: This element provide the structure for the navigation bar on the top of the webpage. The
+                nav bar includes the structure of an unordered list (&lt;ul&gt;) and anchor tag to navigate between
+                pages</li>
+            <li>&lt;header&gt;: The &lt;header&gt; element contains an avatar image, page's title, and a short
+                description.</li>
+            <li>
+                The "about-me" container:
+                <ul>
+                    <li>&lt;div class="container-about-me"&gt;: acts as the outer wrapper to control layout and margin
+                        spacing for the entire “About Me” section.</li>
+                    <li>&lt;div class="about"&gt;: adds a colored border line to the left of the “About me” heading,
+                        giving a professional, clean accent. It's also styled with a soft background color, rounded
+                        corners, and shadows to make it look like a floating box.</li>
+                    <li>&lt;p&gt;: This element hold the description about myself</li>
+                </ul>
+            </li>
+            <li>
+                Label:
+                <ul>
+                    <li>&lt;h2 class="label"&gt;: This heading introduce the next section, the label class
+                        gives the center text and a color for the words </li>
+                </ul>
+            </li>
+            <li>
+                Hobbies and Interest section:
+                <ul>
+                    <li>&lt;div class="hobbies"&gt;: This is a container for all hobby cards, arranged in a responsive
+                        grid layout.</li>
+                    <li>&lt;div class="hobby"&gt;: This div element represents one div card, including an
+                        image(&lt;class="hobby-img"&gt;:), title(&lt;class="hobby-label"&gt;:),
+                        and a short description(&lt;class="hobby-text"&gt;:)</li>
+
+                </ul>
+            </li>&lt;footer&gt;:
+
+        </ol>
+        <h3 class="sub-label">CSS Structure</h3>
+        <ol class="comment-list">
+            <li>body: This targets the body element of the page and sets the margin to 0</li>
+
+            <li>nav(navigation bar), nav .logo, nav ul, nav ul li: Generally, these selectors target the navigation bar
+                on the top of the webpage, each page has the same nav bar. They set various properties such as: display,
+                margin, padding, background, list-style, position, box-shadow, hover, img, align-items, justify-content,
+                focus.
+            </li>
+
+            <li>header - header .profile-pic, header h1, header p: This selector targets the header element of the page
+                and sets its padding, background, display, box-shadow, header img, and color, font-size of the header
+                heading and text</li>
+
+            <li>nav ul li a:hover : This selector targets the anchor (&lt;a&gt;) elements that are inside the list items
+                (&lt;li&gt;) within an unordered list (&lt;ul&gt;) in the navigation bar (&lt;nav&gt;). It applies a
+                style change when the user hovers the mouse over a navigation link</li>
+            <li>The "about-me" container:
+
+                <ul>
+                    <li>.container-about-me: This selector targets the main containter that holds the "About-me" section
+                        and sets properties: centered alignment, width (60%), internal padding, line spacing, rounded
+                        corners, border, semi-transparent background, and box shadow for structure and spacing. </li>
+                    <li>.about: This selector creates a vertical left border beside the heading and adds left padding to
+                        separate the
+                        text
+                        from the border.</li>
+                    <li>.about h2: This selector targets the heading of the container and sets the heading’s text size
+                        (2.5vw), line height, and color to make it distinct and consistent
+                        within the section.</li>
+                    <li>about p: This selector targets the text below to set its line-height in order to have a clearer
+                        view. </li>
+
+
+                </ul>
+
+            </li>
+
+            <li>The hobbies section:
+                <ul>
+
+                    <li>.hobbies: Defines a responsive grid layout for all hobby items. Sets a maximum width, centers
+                        the section
+                        using margins, adds internal padding, uses CSS Grid for layout with flexible column sizing, and
+                        defines consistent spacing between items.</li>
+                    <li>.hobby: Specifies the container for each hobby item. Sets internal padding, rounded corners, a
+                        shadow,
+                        and transition effects for smooth hover animations.</li>
+                    <li>.hobby:hover
+                        Adjusts the hobby container position and shadow when hovered, creating a visual response using
+                        transform and box-shadow properties.</li>
+                    <li>.hobby-img
+                        Defines image structure inside each hobby item. Sets the width and height, adds a border, rounds
+                        the corners, ensures images cover their container using object-fit, and displays them as block
+                        elements.</li>
+
+                </ul>
+            </li>
+
+
+
+        </ol>
+        <h1 class="label">AESTHETIC SECTION</h1>
+        <p>Generally, this website's aesthetic is designed to provide users with a visually appealing and intuitive
+            experience. The layout showcases a harmonious blend of colors, typography, and imagery, while also
+            maintaining a
+            professional and organized appearance. The use of background images, carefully chosen fonts, and smooth
+            transitions creates an immersive atmosphere that invites users to explore the website's content. The aim is
+            to
+            evoke a sense of sophistication, modernity, and approachability, allowing users to perceive my webpages as
+            both
+            informative and engaging. The aspects of my Webpage's aesthetics are provided below.</p>
+        <h3 class="sub-label">a. Structure, Layout & Effect (Interactivity)</h3>
+        <ol>
+            <li>The first webpage and last webpage have similar structure, so do the others.</li>
+            <li>The navigation bar located at the top of the page and styled with a semi-transparent background,
+                containing the site tilte and a list of navigation items with cool hover effect. This section uses
+                flexbox layout to aligns the profile picture on the same line and push to the 2 sides of the page.</li>
+            <li>Header positioned right below the nav bar contains a circular profile image centered on the page
+                followed by a heading and a sub-heading.</li>
+            <li>About-Me section is place right below the header, structured inside a white container with the opacity
+                of 0.6 creates a slight transparent effect. The container include a title with a styled left border and
+                two paragraph of text. This section uses consistent internal padding, rounded corners, and a shadow to
+                visually separate it from the background. </li>
+            <li>Following that, a grid layout is used to display multiple hobby cards that arranged responsively in rows
+                and columns (<span class=code>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))</span> -
+                ensuring the
+                layout adapts to different screen sizes). Each .hobby card include an image (.hobby-img) at the top and
+                A title (.hobby-label) and a short description (.hobby-text) below. Cards are evenly spaced using gap,
+                and each card has padding, border-radius, and subtle hover effects.</li>
+        </ol>
+        <div class="double-image-container">
+            <img src="images/hobbies.png" class="double-image-member" alt="Hobbies grid image">
+            <img src="images/grid.png" class="double-image-member" alt="Hobbies grid image with responsive design">
+        </div>
+        <h3 class="sub-label">b. Graphical Features</h3>
+        <ol>
+            <li>The color palette of the website is primarily composed of soft purple, lavender, and light blue tones,
+                creating a calm and modern aesthetic. These colors are used consistently across the background
+                gradients, section containers, and text highlights to maintain visual harmony and identity. The gradient
+                transitions between blue and violet establish a clean, futuristic impression</li>
+            <li>The text colors are chosen for clear readability, with dark gray (#1e1e2e) used for body text to ensure
+                sufficient contrast against the light background, while headings adopt a more vibrant purple (#5d13d4)
+                to emphasize hierarchy and draw attention to key sections.</li>
+            <li>The background design utilizes linear gradients to create smooth color transitions and depth throughout
+                the page. The combination of a gradient header background and semi-transparent containers (rgba(236,
+                233, 240, 0.6)) helps separate sections without hard edges, giving the page a polished and layered look.
+            </li>
+            <li>The navigation bar incorporates a frosted-glass effect using a semi-transparent background (rgba(255,
+                255, 255, 0.4)) and a blur filter (backdrop-filter: blur(10px)). This modern design technique maintains
+                visibility of the navigation links while allowing background colors to subtly show through.</li>
+            <li>The use of consistent color tones, soft shadows, and rounded borders across all elements creates a
+                cohesive visual style that reflects simplicity, professionalism, and a focus on clarity — aligning the
+                graphical presentation with the website’s purpose of showcasing personal and academic information.</li>
+
+        </ol>
+        <h3 class="sub-label">c. Typyography</h3>
+        <ol>
+            <li>The primary font used throughout the website is a serif typeface, providing a formal and academic
+                appearance. This choice contributes to a clean and professional visual presentation that suits the
+                informative and portfolio-style nature of the website.</li>
+            <li>The font sizes are defined using responsive viewport units (vw), ensuring that text elements such as
+                headings and paragraphs automatically scale according to the screen size. This enhances readability
+                across both desktop and mobile devices.</li>
+            <li>Headings (h1, h2, and labels) use larger font sizes and distinct colors such as purple (#5d13d4)
+                to create visual hierarchy and emphasize section titles, while paragraph text maintains a smaller,
+                consistent size for smooth reading.</li>
+        </ol>
+        <h3 class="sub-label">d. White Spacing</h3>
+        <ol>
+            <li>Consistent margins, padding, and line heights are used to ensure a balanced and readable layout,
+                especially within text blocks and container elements.</li>
+            <li>White space is applied throughout the website to separate major sections such as the header, “About Me,”
+                and “Hobbies and Interests,” allowing each area to stand out clearly without feeling crowded.The use of
+                grid and flex layouts provides even spacing between images, cards, and navigation elements, improving
+                visual flow and maintaining a clean, organized structure across the page.</li>
+            <li>The use of grid and flex layouts provides even spacing between images, cards, and navigation elements,
+                improving visual flow and maintaining a clean, organized structure across the page.</li>
+        </ol>
+        <h1 class="label">ACCESSIBILITY SECTION</h1>
+        <h3 class="sub-label">Responsive Design</h3>
+        <ul>
+            <li>The website is designed to be fully responsive, adjusting its layout, text size, and image proportions
+                across
+                different screen sizes. Viewport units (vw, vh) are used to ensure consistent scaling of headings and
+                content. The navigation bar and header remain aligned using flexbox, while the grid layout in the
+                “Hobbies
+                and Interests” section automatically reorganizes into one or multiple columns depending on the device.
+                This
+                responsive structure improves accessibility, ensuring the website remains clear, readable, and
+                user-friendly
+                on mobile, tablet, and desktop screens.</li>
+        </ul>
+        <div class="double-image-container">
+            <img src="images/hobbies.png" class="double-image-member" alt="hobbies grid layout">
+            <img src="images/grid.png" class="double-image-member" alt="hobbies grid layout with responsive design">
+        </div>
+
+        <h3 class="sub-label">Alt Altributes</h3>
+        <ul>
+            <li>The second factor is the use of alt attributes on images. Alt attributes provide a description of the
+                image content for screen readers, which is important for users who are visually impaired and rely on
+                these tools to understand the content of the website.</li>
+        </ul>
+        <h3 class="sub-label">Contrast</h3>
+        <ul>
+            <li>The third factor is the contrast between the background color and text color. Good contrast is important
+                for readability, particularly for users with visual impairments.</li>
+        </ul>
+        <div class="double-image-container">
+            <img src="images/hobbies.png" class="double-image-member" alt="hobbies grid layout">
+            <img src="images/futurepage.png" class="double-image-member" alt="Beautiful contrast of future page">
+        </div>
+
+    </div>
+</body>
+
+</html>
